@@ -1,0 +1,183 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  opacity: 0.9;
+  height: 100%;
+  width: 100%;
+  font-family: Helvetica;
+  color: black;
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+
+header {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 3.136em;
+  border-bottom: 1px solid seashell;
+  position: fixed;
+  background-color: black;
+  z-index: 1;
+}
+
+nav {
+  background-color: #00005d;
+  height: 100%;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  text-align: left;
+  padding-right: 2em;
+  padding-top: 0.7em;
+  position: relative;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+}
+nav ul ul {
+  position: absolute;
+  background-color: #1da08e;
+  padding: 0;
+  text-align: left;
+  display: none;
+}
+nav ul ul li {
+  border: 1px solid #dfa811;
+  display: block;
+  width: 8em;
+  padding-left: 1em;
+  margin-left: 0;
+}
+nav li:hover ul {
+  display: block;
+}
+nav li {
+  padding: 0.5em;
+  display: inline-block;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+}
+nav a:link {
+  color: #ffffff;
+}
+nav a:visited {
+  color: #eaeaea;
+}
+nav a:hover {
+  color: #d3dbeb;
+}
+
+.clearfix::after {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+.main {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+  width: 100%;
+  background-image: url("Pictures/main.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: 60px;
+  text-align: center;
+  padding-top: 3.636rem;
+}
+
+.text {
+  margin-left: auto;
+  margin-right: auto;
+  flex: 2 1 100%;
+  color: cornsilk;
+}
+
+#sports {
+  width: 100%;
+  position: relative;
+  top: 1.818em;
+  display: inline-flexbox;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: white;
+  color: black;
+  padding-top: 1.363em;
+}
+#sportss h2,
+#competitions h2 {
+  text-align: center;
+}
+.figcaptions,
+.matches {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex: 2 1 100px;
+  padding-top: 1.363em;
+}
+img {
+  max-height: 300px;
+  max-width: 300px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  border-radius: 100%;
+}
+.figcaptions h4 {
+  margin-top: 0px;
+}
+#competitions,
+#contacts {
+  width: 100%;
+  position: relative;
+  display: inline-flexbox;
+  top: 0.9em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: white;
+  color: black;
+  padding-top: 1.363em;
+}
+button {
+  height: 7em;
+  width: 16em;
+  padding: auto;
+  margin: 0.45em;
+  border-radius: 0.5em;
+}
+
+@media (max-width: 500px) {
+  .header,
+  .main,
+  #sports,
+  #competitions,
+  #contacts {
+    width: 100%;
+  }
+  nav,
+  .main,
+  #sports,
+  #competitions,
+  #contacts {
+    margin: auto;
+    padding: auto;
+  }
+  body {
+    font-size: 16px;
+  }
+}
